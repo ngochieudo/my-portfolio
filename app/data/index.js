@@ -12,7 +12,7 @@ export const projects = [
     des: "A full stack booking application with a focus on user experience and performance.",
     img: "/pepbooking.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/nest.svg",],
-    link: "/ui.earth.com",
+    link: "https://github.com/ngochieudo/final-project",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ export const projects = [
     des: "A simple portfolio website showcasing my projects and skills using various UI libraries.",
     img: "/portfolio.png",
     iconLists: ["/next.svg", "/tail.svg", "/js.svg", "/mui.svg"],
-    link: "/ui.yoom.com",
+    link: "https://github.com/ngochieudo/my-portfolio",
   },
 ];
 
@@ -46,17 +46,3 @@ export const workExperience = [
   },
 ];
 
-export const socialMedia = [
-  {
-    id: 1,
-    img: "/git.svg",
-  },
-  {
-    id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
-    img: "/link.svg",
-  },
-];
