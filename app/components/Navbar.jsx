@@ -5,6 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { navItems } from "../data";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -34,15 +35,15 @@ const Navbar = () => {
       Portfolio.
     </Link>
     <div className="space-x-4 font-sans font-semibold text-white-600 px-3">
-      <Link href="#about" className="px-2">
-        About
-      </Link>
-      <Link href="#projects" className="px-2">
-        Projects
-      </Link>
-      <Link href="#contact" className="px-2">
-        Contact
-      </Link>
+      {navItems.map((item) => (
+        <Link
+          key={item.name}
+          href={item.link}
+          className="text-white-600 hover:text-blue-500 transition duration-300"
+        >
+          {item.name}
+        </Link>
+      ))}
     </div>
     <div className="hidden md:flex items-center space-x-4 gap-2">
       <Tooltip title="Facebook" arrow>
