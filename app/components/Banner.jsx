@@ -49,6 +49,7 @@ const Banner = () => {
           <Button
             variant="outlined"
             size="large"
+            href="#contact"
             sx={{
               marginTop: "20px",
               color: "white",

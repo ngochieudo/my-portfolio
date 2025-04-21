@@ -29,9 +29,9 @@ const Navbar = () => {
     <nav
       className={`${
         scrolled ? "bg-black bg-opacity-80 shadow-lg" : "bg-transparent"
-      } transition-all duration-300 px-6 py-4 flex justify-between items-center fixed top-0 left-0 w-full z-10`}
+      } transition-all duration-300 px-6 py-4 flex justify-between items-center fixed top-0 left-0 w-full z-50`}
     >
-    <Link href="/" className="font-bold font-sans text-xl text-white-600">
+    <Link href="#home" className="font-bold font-sans text-xl text-white-600">
       Portfolio.
     </Link>
     <div className="space-x-4 font-sans font-semibold text-white-600 px-3">
@@ -84,26 +84,6 @@ const Navbar = () => {
           target="_blank"
         >
           <LinkedInIcon sx={{ fontSize: "16px" }} />
-        </Fab>
-      </Tooltip>
-      <Tooltip title="Instagram" arrow>
-        <Fab
-          sx={{
-            "&:hover": {
-              opacity: 0.8,
-            },
-            "&.MuiFab-root": {
-              backgroundColor: "transparent",
-              border: "1px solid white",
-              color: "white",
-            },
-          }}
-          size="small"
-          aria-label="facebook"
-          href="https://www.linkedin.com/in/peps1man/"
-          target="_blank"
-        >
-          <InstagramIcon sx={{ fontSize: "16px" }} />
         </Fab>
       </Tooltip>
     </div>
