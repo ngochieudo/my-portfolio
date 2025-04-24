@@ -39,7 +39,7 @@ const Contact = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div className="space-y-2 text-white mt-5 flex flex-col items-center">
+          <div className="space-y-2 text-white mt-5 flex flex-col items-start max-w-[400px] mx-auto">
             <div>
               <Tooltip title="Email of Hieu Do" arrow placement="top">
                 <a href="mailto:ngochieudo2001@gmail.com">
